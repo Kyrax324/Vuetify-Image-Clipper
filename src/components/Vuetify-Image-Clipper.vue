@@ -1,5 +1,5 @@
 <template>
-<v-card>
+<v-card flat>
 	<v-row no-gutters class="ma-0">
 		<v-col cols=12 md>
 			<clipper-fixed 
@@ -18,8 +18,11 @@
 							<div class="py-12 text-center font-italic">
 								<div>
 									<v-icon size="80px">mdi-file-image-outline</v-icon>
-								</div>
-								<div class="grey--text">No image is selected.</div>
+								</div>                                
+								<div class="grey--text">
+                                    <div>No image is selected.</div>
+                                    <div class="pt-1"><v-btn small color="primary" class="text-capitalize">upload image</v-btn></div>
+                                </div>
 							</div>
 						</slot>
 					</clipper-upload>
@@ -117,3 +120,12 @@ export default {
 	}
   }
 </script>
+
+<style scoped>
+	.radius-05{
+		border-radius: 5px !important;
+	}
+	.fill-width{
+		width: 100% !important;
+	}
+</style>

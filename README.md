@@ -4,7 +4,7 @@ A simple image input with clipper.
 
 * integrate and inspired by:
 	- [vuetify's date-picker](https://vuetifyjs.com/en/components/date-pickers)
-	- [vuejs-Clipper](https://www.npmjs.com/package/vuejs-clipper)
+	- [vuejs-clipper](https://www.npmjs.com/package/vuejs-clipper)
 
 ## Installation
 
@@ -13,9 +13,11 @@ npm install vuetify-image-clipper --save
 ```
 ### Import
 
+main.js / app.js
 ```javascript
 import VuetifyImageClipper from "vuetify-image-clipper"
 import "vuetify-image-clipper/dist/v-image-clipper.css"
+Vue.use(VuetifyImageClipper)
 ```
 
 ```html
@@ -41,4 +43,5 @@ import "vuetify-image-clipper/dist/v-image-clipper.css"
 |no_result|Displayed when no result image is clipped|
 
 * Example
+	<!-- - [Demo]() -->
 	- [Integrating with dialog](/docs/examples/integrating-with-dialog.vue)
