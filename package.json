@@ -46,7 +46,7 @@
     "not dead"
   ],
   "description": "## Project setup ``` npm install ```",
-  "main": "babel.config.js",
+  "main": "dist/vue-address.common.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BBitwolf/Vuetify-Image-Clipper.git"
