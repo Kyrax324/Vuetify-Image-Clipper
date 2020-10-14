@@ -20,6 +20,7 @@ import "vuetify-image-clipper/dist/v-image-clipper.css"
 Vue.use(VuetifyImageClipper)
 ```
 
+any.vue
 ```html
 <v-image-clipper v-model="image"></v-image-clipper>
 ```
@@ -43,5 +44,5 @@ Vue.use(VuetifyImageClipper)
 |no_result|Displayed when no result image is clipped|
 
 * Example
-	<!-- - [Demo]() -->
-	- [Integrating with dialog](/docs/examples/integrating-with-dialog.vue)
+	- [Demo](https://bbitwolf.github.io/Vue-Project-Demo/)
+	- [Demo Src Code](/docs/examples/integrating-with-dialog.vue)
