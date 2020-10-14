@@ -1,10 +1,11 @@
 {
   "name": "vuetify-image-clipper",
-  "version": "0.0.1",
+  "version": "0.0.4",
+  "main": "dist/v-image-clipper.common.js",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-image-clipper ./src/components/index.js",
+    "build": "vue-cli-service build --target lib --name v-image-clipper ./src/components/index.js",
     "lint": "vue-cli-service lint",
     "build:doc": "vue-cli-service build ./src/main.js --dest docs --mode development"
   },
@@ -46,11 +47,15 @@
     "not dead"
   ],
   "description": "## Project setup ``` npm install ```",
-  "main": "dist/vue-address.common.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BBitwolf/Vuetify-Image-Clipper.git"
   },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*"
+  ],
   "keywords": [
     "Vuetify",
     "Image",
