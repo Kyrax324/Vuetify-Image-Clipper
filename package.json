@@ -1,0 +1,65 @@
+{
+  "name": "vuetify-image-clipper",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name vue-image-clipper ./src/components/index.js",
+    "lint": "vue-cli-service lint",
+    "build:doc": "vue-cli-service build ./src/main.js --dest docs --mode development"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "rxjs": "^6.6.3",
+    "vue": "^2.6.11",
+    "vue-rx": "^6.2.0",
+    "vuejs-clipper": "^3.0.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BBitwolf/Vuetify-Image-Clipper.git"
+  },
+  "keywords": [
+    "Vuetify",
+    "Image",
+    "Clipper"
+  ],
+  "author": "BBitwolf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BBitwolf/Vuetify-Image-Clipper/issues"
+  },
+  "homepage": "https://github.com/BBitwolf/Vuetify-Image-Clipper#readme"
+}
