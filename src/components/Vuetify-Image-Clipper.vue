@@ -63,27 +63,22 @@ export default {
 		},
 		hide_result: {
 			type: Boolean,
-			required: false,
 			default: false,
 		},
 		ratio: {
 			type: Number,
-			required: false,
 			default : 1
 		},
 		clip_icon: {
 			type: String,
-			required: false,
 			default : "mdi-content-cut"
 		},
 		reset_icon: {
 			type: String,
-			required: false,
 			default : "mdi-backup-restore"
 		},
 		rotate_icon: {
 			type: String,
-			required: false,
 			default : "mdi-format-rotate-90"
 		},
 	},

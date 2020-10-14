@@ -46,7 +46,7 @@
     "last 2 versions",
     "not dead"
   ],
-  "description": "## Project setup ``` npm install ```",
+  "description": "A simple image input with clipper. (integrate and inspired by: vuetify's date-picker, vuejs-Clipper)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BBitwolf/Vuetify-Image-Clipper.git"
