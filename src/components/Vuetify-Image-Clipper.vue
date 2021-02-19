@@ -13,7 +13,8 @@
 				@load="resetRotate()"
 			>
 				<div slot="placeholder" class="grey lighten-4">
-					<clipper-upload v-model="imgURL" class="clipper-upload">
+					<clipper-upload v-model="imgURL" class="clipper-upload" :accept="accept">
+						<!-- image input slot -->
 						<slot name="image_input">
 							<div class="py-12 text-center font-italic">
 								<div>
@@ -32,14 +33,17 @@
 		<template v-if="imgURL != '' ">
 			<v-col cols=12 md=3 align-self="center">
 				<v-row dense class="pa-1 ma-0" justify="space-around" :class="hide_result ? 'flex-column' : '' ">
-				<v-col cols=12 v-if="!hide_result">
-						<img :src="imgResult" class="fill-width">
-						<div v-show="imgResult == '' ">
-							<slot name="no_result">
-							<div class="radius-05 body-2 font-italic grey--text py-6 text-center" style="border: 2px dashed #ccc;">No Result</div>
-							</slot>
-						</div>
-				</v-col>
+					<v-col cols=12 v-if="!hide_result">
+							<img :src="imgResult" class="fill-width">
+							<div v-show="imgResult == '' ">
+								<!-- no result slot -->
+								<slot name="no_result">
+									<div class="radius-05 body-2 font-italic grey--text py-6 text-center" style="border: 2px dashed #ccc;">No Result</div>
+								</slot>
+							</div>
+							<!-- file details slot -->
+							<slot name="extra_info"></slot>
+					</v-col>
 					<v-col cols=auto><v-icon color="success" title="Confirm" @click="clipImage()">{{ clip_icon }}</v-icon></v-col>
 					<v-col cols=auto><v-icon color="error" title="Reset" @click="resetComponent()">{{ reset_icon }}</v-icon></v-col>
 					<v-col cols=auto><v-icon color="black" title="Rotate Image" @click="rotateImage()">{{ rotate_icon }}</v-icon></v-col>	
@@ -48,6 +52,7 @@
 		</template>
 	</v-row>
 	<v-card-actions>
+		<!-- default slot -->
 		<slot></slot>
 	</v-card-actions>
 </v-card>
@@ -84,6 +89,10 @@ export default {
 			type: String,
 			default : "mdi-format-rotate-90"
 		},
+		accept: {
+			type: String,
+			default : "image/*"
+		},
 	},
 	data () {
 		return {
@@ -107,6 +116,7 @@ export default {
 		resetComponent(){
 			this.imgURL = ''
 			this.imgResult = ''
+			this.$emit('reset')
 		},
 		resetRotate(){
 			this.rotate = 0

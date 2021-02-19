@@ -1,11 +1,12 @@
 {
   "name": "vuetify-image-clipper",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "main": "dist/v-image-clipper.common.js",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name v-image-clipper ./src/components/index.js",
+    "lib": "vue-cli-service build --target lib --name v-image-clipper ./src/components/index.js",
     "lint": "vue-cli-service lint",
     "build:doc": "vue-cli-service build ./src/main.js --dest docs --mode development"
   },
@@ -49,7 +50,7 @@
   "description": "A simple image input with clipper. (integrate and inspired by: vuetify's date-picker, vuejs-Clipper)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BBitwolf/Vuetify-Image-Clipper.git"
+    "url": "git+https://github.com/Kyrax324/Vuetify-Image-Clipper.git"
   },
   "files": [
     "dist/*",
@@ -61,10 +62,10 @@
     "Image",
     "Clipper"
   ],
-  "author": "BBitwolf",
+  "author": "Kyrax324",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BBitwolf/Vuetify-Image-Clipper/issues"
+    "url": "https://github.com/Kyrax324/Vuetify-Image-Clipper/issues"
   },
-  "homepage": "https://github.com/BBitwolf/Vuetify-Image-Clipper#readme"
+  "homepage": "https://github.com/Kyrax324/Vuetify-Image-Clipper#readme"
 }

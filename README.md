@@ -34,6 +34,7 @@ any.vue
 |clip_icon|String|"mdi-content-cut"|Icon for clip image
 |reset_icon|String|"mdi-backup-restore"|Icon for reset image
 |rotate_icon|String|"mdi-format-rotate-90"|Icon for rotate image
+|accept|String|"image/*"|accept attribute of html input tag
 
 * Slot
 
@@ -42,7 +43,8 @@ any.vue
 |default|Displayed below the clipper, can be used for example for adding action button (OK and Cancel)|
 |image_input|Displayed when no image is selected|
 |no_result|Displayed when no result image is clipped|
+|extra_info|Displayed extra information|
 
-* Example
+<!-- * Example
 	- [Demo](https://bbitwolf.github.io/Vue-Project-Demo/)
-	- [Demo Src Code](/docs/examples/integrating-with-dialog.vue)
+	- [Demo Src Code](/docs/examples/integrating-with-dialog.vue) -->
