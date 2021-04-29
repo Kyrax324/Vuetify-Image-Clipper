@@ -12,7 +12,7 @@
 				style="cursor: pointer;"
 				@load="resetRotate()"
 			>
-				<div slot="placeholder" class="grey lighten-4">
+				<div slot="placeholder">
 					<clipper-upload v-model="imgURL" class="clipper-upload" :accept="accept">
 						<!-- image input slot -->
 						<slot name="image_input">
@@ -46,7 +46,7 @@
 					</v-col>
 					<v-col cols=auto><v-icon color="success" title="Confirm" @click="clipImage()">{{ clip_icon }}</v-icon></v-col>
 					<v-col cols=auto><v-icon color="error" title="Reset" @click="resetComponent()">{{ reset_icon }}</v-icon></v-col>
-					<v-col cols=auto><v-icon color="black" title="Rotate Image" @click="rotateImage()">{{ rotate_icon }}</v-icon></v-col>	
+					<v-col cols=auto><v-icon title="Rotate Image" @click="rotateImage()">{{ rotate_icon }}</v-icon></v-col>	
 				</v-row>
 			</v-col>
 		</template>
